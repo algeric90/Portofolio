@@ -1,0 +1,197 @@
+*, ::after, ::before{
+    box-sizing: border-box;
+}
+body{
+    background-color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+}
+.navbar-container{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+.navbar-container .nav-list li {
+    list-style-type: none;
+}
+.navbar-container .nav-list li a, .navbrand {
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+header .navbar-container .nav-list li:hover a {
+    background-color: white;
+    color: #169976;
+} 
+
+/* Home */
+main.content #home {
+    background: linear-gradient(180deg, #000000, #22222222 100%), url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+main.content #home .intro {
+    display: flex;
+    flex: 1 1;
+    gap: 3rem;
+    margin-inline: auto;
+    padding: 10rem 2rem;
+    align-items: center;
+    color: white;
+    width: 100%;
+    max-width: 1200px;
+}
+main.content #home .intro h1 {
+  margin-block: 1rem;
+  font-size: 4rem;
+  text-align: center;
+}
+main.content #home .intro p {
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  text-align: center;
+}
+
+main.content #home img {
+    height: 15em;
+    border-radius: 50%;
+}
+
+
+
+/* About */
+main.content #about .profile {
+    gap: 3rem;
+    margin-inline: auto;
+    padding: 3rem 4rem;
+    align-items: center;
+    color: black;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+main.content #about .profile button {
+    background: white;
+    border: 1px solid #222222;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+}
+main.content #about .profile button:hover {
+    background: #222222;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+
+/* Project */
+main.content #project {
+    background: linear-gradient(180deg, #222222 0%, #000000 100%);   
+}
+main.content #project .project-container {  
+    margin-inline: auto;
+    margin-block: 0;
+    padding: 3rem 4rem;
+    width: 100%;
+    max-width: 1200px;    
+}
+main.content .project-content {
+    display: flex;
+    gap: 2rem 4rem;
+}
+main.content .project-container>h2 {
+    color: white;
+    text-align: center;
+}
+main.content #project .project-container .projects-list{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+main.content #project .project-container .card{
+    width: 100%;
+    max-width: 300px;
+    color: white;
+}
+.card .languages,.frameworks {
+    display: flex;
+    gap: 0.5rem;
+    list-style-type: none;
+    padding: 0;
+}
+.projects-list ul{
+    padding: 0;
+}
+.projects-list li{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+main.content #project img {
+    height: 10em;
+    border-radius: 15%;
+}
+footer #contact {
+    background: #000000;
+    color: white;
+}
+footer #contact .contact-container {
+    margin-inline: auto;
+    margin-block: 0;
+    padding: 2rem 4rem;
+    width: 100%;
+    max-width: 1200px; 
+    text-align: center;
+}
+footer #contact .contact-container .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-block: 1rem;
+    border-top: 0px;
+}
+
+/* modal */
+#modal {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url("../img/gotcha.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:auto;
+    z-index: 2;
+    cursor: pointer;
+}
