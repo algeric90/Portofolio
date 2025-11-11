@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "Portofolio | ARL",
+    "description": "Portfolio of Alfa Rifa Luky, a frontend developer specializing in responsive web design, accessibility, and cross-browser compatibility.",
+    "keywords": ["frontend developer"]
+  },
+
+  "profile": {
+    "name": "Alfa Rifa Luky Achmad Rayendra",
+    "role": "Frontend Web Developer",
+    "summary": "I’m Alfa, a Frontend Web Developer who focuses on building responsive, accessible, and reliable web experiences. My goal is to make the web faster and easier for everyone through clean code and design. Collaboration and continuous learning are at the heart of my work.",
+    "photo": "images/profile.jpg",
+    "location": "Indonesia",
+    "socials": [
+      { "platform": "GitHub", "url": "https://github.com/algeric90" },
+      { "platform": "LinkedIn", "url": "https://www.linkedin.com/in/alfa-rifa-luky-achmad-rayendra-5a2077289/" },
+      { "platform": "Email", "url": "mailto:alfarifaluky.ar@gmail.com" }
+    ]
+  },
+  
+  "projects": {
+    "title": "Projects",
+    "list": [
+      {
+        "name": "Sena",
+        "description": "Web-based Sentiment Analysis System for Google Play Store reviews that automates data scraping, text preprocessing, and sentiment classification using machine learning algorithms SVM and Naïve Bayes.",
+        "feature": ["Scraping", "Text Preprocessing", "Modeling", "Visualization Data"],
+        "tech": ["HTML", "CSS", "JS", "Python", "Bootstrap", "Flask"],
+        "image": "images/projects/portfolio.png",
+        "demo": "https://www.youtube.com/watch?v=tufgYl6mPds",
+        "repo": "https://github.com/algeric90/PTA"
+      },
+      {
+        "name": "Notes",
+        "description": "lorem",
+        "feature": ["Crud", "Search", "Offline", "Responsive"],
+        "tech": ["HTML5", "CSS3", "JS", "Lit", "Webpack"],
+        "image": "images/projects/audit.png",
+        "demo": "#",
+        "repo": "#"
+      },
+      {
+        "name": "Story",
+        "description": "loremkasl",
+        "feature": ["Responsive", "CRUD", "Offline", "Geolocation"],
+        "tech": ["HTML5", "CSS3", "JS", "Leaflet", "Webpack"],
+        "image": "images/projects/audit.png",
+        "demo": "#",
+        "repo": "#"
+      }
+    ]
+  }
+}

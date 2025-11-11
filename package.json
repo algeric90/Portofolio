@@ -20,11 +20,15 @@
   "homepage": "https://github.com/algeric90/Portofolio#readme",
   "devDependencies": {
     "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "@fortawesome/fontawesome-free": "^7.1.0",
     "autoprefixer": "^10.4.21",
+    "babel-loader": "^10.0.0",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^13.0.1",
     "css-loader": "^7.1.2",
     "html-webpack-plugin": "^5.6.4",
+    "http-server": "^14.1.1",
     "mini-css-extract-plugin": "^2.9.4",
     "postcss-loader": "^8.2.0",
     "sass": "^1.93.3",
@@ -37,6 +41,7 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.8"
+    "bootstrap": "^5.3.8",
+    "motion": "^12.23.24"
   }
 }
