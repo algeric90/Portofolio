@@ -29,47 +29,61 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        @include media-breakpoint-up(lg){
-          h1 {
-            font-size: 3.5rem;
-            margin-bottom: 0;
-          }
-          h2{
-            font-size: 2.5rem;
-            font-weight: bolder;
-          }
-          p{
-            font-size: 1.5rem;
-          }
-        }
-        @include media-breakpoint-up(xl){
-          h1 {
-            font-size: 4rem;
-            margin-bottom: 0;
-          }
-          h2{
-            font-size: 3rem;
-          }
-          p{
-            font-size: 2rem;
-          }
-        }
-        @include media-breakpoint-up(xxl){
-          h1 {
-            font-size: 5rem;
-            margin-bottom: 0;
-          }
-          h2{
-            font-size: 4rem;
-          }
-          p{
-            font-size: 2rem;
-          }
-        }
         &#hero{
+          @include media-breakpoint-up(lg){
+            h1 {
+              font-size: 3.5rem;
+              margin-bottom: 0;
+            }
+            p{
+              font-size: 1.5rem;
+            }
+          }
+          @include media-breakpoint-up(xl){
+            h1 {
+              font-size: 4rem;
+            }
+            p{
+              font-size: 2rem;
+            }
+          }
+          @include media-breakpoint-up(xxl){
+            h1 {
+              font-size: 5rem;
+            }
+          }
           text-align: center;
         }
         &#about{
+          #animations{
+            svg path{
+              fill: transparent;
+              stroke: var(--c4);
+              stroke-width: 0.1;
+              stroke-dasharray: 500;
+              stroke-dashoffset: 500;
+            }
+            .svg-animated{
+              animation: animated 7s ease-in-out forwards;
+            }
+            @keyframes animated{
+              0%{
+                stroke-dashoffset: 500;
+              }
+              50%{
+                fill: transparent ;
+              }
+              75%{
+                fill: var(--c2);
+                stroke: var(--c2);
+              }
+              100%{
+                fill: var(--c4);
+                stroke: var(--c4);
+                stroke-dashoffset: 0;
+              }
+            }
+          }
           #info{
             display: flex;
             flex-direction: column;
@@ -82,13 +96,59 @@
             }
           }
         }
+        &#projects{
+          @keyframes fade-in-fwd {
+            0% {
+              transform: translateZ(-80px);
+              opacity: 0;
+            }
+            100% {
+              transform: translateZ(0);
+              opacity: 1;
+            }
+          }
+          @keyframes fade-out-fwd{
+            0%{
+              transform:translateZ(0);
+              opacity:1
+            }
+            100%{
+              transform:translateZ(80px);
+              opacity:0;
+            }
+          }
+          .card{
+            .ratio-16x10{
+              aspect-ratio: 16 / 10;
+            }
+            &:hover{
+              .card-img-overlay {
+                color: var(--c1);
+                animation:fade-in-fwd .6s cubic-bezier(.39,.575,.565,1.000) both;
+              }
+            }
+            .card-img-overlay {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              background: rgba(0,0,0,0.6);
+              opacity: 0;
+              animation:fade-out-fwd .7s cubic-bezier(.25,.46,.45,.94) both;
+              @include media-breakpoint-down(md){
+                p{
+                  font-size: 0.85rem;
+                }
+              }
+            }
+          }
+        }
       
         &#contact{
-          .card{
-            max-width: 600px;
-            &:hover{
-              background-color: var(--c1);
-            }
+          p{
+            max-width: 550px;
+            text-align: center;
           }
         }
       }

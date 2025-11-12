@@ -63,27 +63,10 @@ inView("section #info", (element) => {
   return () => animate(element, { opacity: 0, x: -100 })
 });
 
-inView("section video", (element) => {
-  animate(
-		element,
-		{ opacity: 1, x: [100, 0] },
-		{
-			duration: 0.9,
-			easing: [0.17, 0.55, 0.55, 1],
-		}
-  )
-
-  if (element) {
-    element.setAttribute("autoplay", true);
-    element.play();
-  }
-
+inView("section svg path", (element) => {
+  element.classList.add('svg-animated')
   return () => {
-    animate(element, { opacity: 0, x: -100 });
-    if (element) {
-      element.pause();
-      element.setAttribute("autoplay", false);
-    }
+    element.classList.remove("svg-animated");
   };
 });
 
