@@ -70,4 +70,30 @@ inView("section svg path", (element) => {
   };
 });
 
+// SECTION Project
+inView("section#projects", (element) => {
+	animate(
+		element,
+		{ opacity: 1},
+		{
+			duration: 1.2,
+			easing: [0.17, 0.55, 0.55, 1],
+		}
+	)
 
+	return () => animate(element, { opacity: 0})
+});
+
+// SECTION contact
+inView("section#contact", (element) => {
+	animate(
+		element,
+		{ opacity: 1, y: [100, 0] },
+		{
+			duration: 1.2,
+			easing: [0.17, 0.55, 0.55, 1],
+		}
+	)
+
+	return () => animate(element, { opacity: 0, y:-100 })
+});
