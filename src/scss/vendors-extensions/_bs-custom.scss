@@ -9,6 +9,7 @@
   body{
     box-sizing: border-box;
     background-color: var(--c1);
+    font-family: "Quicksand", Roboto, "Helvetica Neue", Arial, sans-serif;    
     header{
       &.fixed-top{
         top: 8px;
