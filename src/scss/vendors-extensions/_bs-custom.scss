@@ -7,6 +7,7 @@
   --c6 : #d1e7dd;
   --c7 : #cff4fc;
   body{
+    box-sizing: border-box;
     background-color: var(--c1);
     header{
       &.fixed-top{
