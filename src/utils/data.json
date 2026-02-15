@@ -5,20 +5,29 @@
       "description": "A discussion forum web application that allows users to create threads, comment, and interact with other users. Built with React and Redux for state management.",
       "imageUrl": "/img/projects/therads.webp",
       "projectUrl": "https://arl-therads.vercel.app",
-      "technologies": ["React","Bootstrap", "SASS", "React Icons", "Redux", "Vite", "Vitest", "Cypress"]
+      "technologies": [
+        "React",
+        "Bootstrap",
+        "SASS",
+        "React Icons",
+        "Redux",
+        "Vite",
+        "Vitest",
+        "Cypress"
+      ]
     },
     {
       "title": "Notes App-v2",
       "description": "A Notes App web application with multiple page that allows users to create, archive, delete and search notes. Built with React and Axios for data fetching.",
       "imageUrl": "/img/projects/notes-v2.webp",
       "projectUrl": "https://arl-notes-v2.vercel.app",
-      "technologies": ["React", "React Icons", "React Router", "Bootstrap", "SASS", "Axios",  "Vite"]
+      "technologies": ["React", "React Icons", "React Router", "Bootstrap", "SASS", "Axios", "Vite"]
     },
     {
       "title": "Story App-v2",
       "description": "A Story App web application that allows users to share stories and location with others. Built with MVP architecture and implemented PWA (Progressive Web App) features.",
-      "imageUrl": "/img/projects/storyapp-v2.webp",
-      "projectUrl": "https://arl-storyapp-v2.vercel.app",
+      "imageUrl": "/img/projects/story-v2.webp",
+      "projectUrl": "https://arl-story-v2.vercel.app",
       "technologies": ["HTML5", "CSS3", "JavaScript", "Bootstrap", "SASS", "Leaflet", "Webpack"]
     },
     {
@@ -47,7 +56,16 @@
       "description": "A comprehensive sentiment analysis platform for Google Play Store app reviews, leveraging Naive Bayes, SVM, and SMOTE methods.",
       "imageUrl": "/img/projects/sena.webp",
       "projectUrl": "https://www.youtube.com/watch?v=tufgYl6mPds",
-      "technologies": ["Flask", "Python", "Bootstrap", "Font Awesome", "MySQL", "scikit-learn", "DataTables", "Chart.js"]
+      "technologies": [
+        "Flask",
+        "Python",
+        "Bootstrap",
+        "Font Awesome",
+        "MySQL",
+        "scikit-learn",
+        "DataTables",
+        "Chart.js"
+      ]
     },
     {
       "title": "P.O.S Djuragan",
@@ -64,7 +82,7 @@
       "date": "1 August 2025",
       "credentialId": "1OP8JD9DLPQK",
       "credentialUrl": "https://www.dicoding.com/certificates/1OP8JD9DLPQK",
-      "imageUrl": "/img/certifications/belajar-dasar-pemrograman-web.webp",
+      "imageUrl": "/img/certifications/belajar-dasar-pemrograman.webp",
       "category": ["Front-End Web Developer", "React Developer"]
     },
     {
@@ -93,7 +111,6 @@
       "credentialUrl": "https://www.dicoding.com/certificates/NVP7JNBKVRX0",
       "imageUrl": "/img/certifications/belajar-membuat-aplikasi-web-dengan-react.webp",
       "category": ["React Developer"]
-
     },
     {
       "title": "Belajar Fundamental Front-End Web Development",
@@ -103,7 +120,6 @@
       "credentialUrl": "https://www.dicoding.com/certificates/53XEKN4NKXRN",
       "imageUrl": "/img/certifications/belajar-fundamental-frontend-web-development.webp",
       "category": ["Front-End Web Developer"]
-
     },
     {
       "title": "Belajar Toolset untuk Pengembangan Front-End Web",
@@ -113,7 +129,6 @@
       "credentialUrl": "https://www.dicoding.com/certificates/L4PQ226J2ZO1",
       "imageUrl": "/img/certifications/belajar-toolset-untuk-pengembangan-frontend-web.webp",
       "category": ["Front-End Web Developer"]
-
     },
     {
       "title": "Belajar Pengembangan Web Intermediate",
@@ -123,7 +138,6 @@
       "credentialUrl": "https://www.dicoding.com/certificates/NVP7JN6KVXR0",
       "imageUrl": "/img/certifications/belajar-pengembangan-web-intermediate.webp",
       "category": ["Front-End Web Developer"]
-
     },
     {
       "title": "Belajar Fundamental Aplikasi Web dengan React",
@@ -131,7 +145,7 @@
       "date": "24 January 2026",
       "credentialId": "72ZDKGY8LPYW",
       "credentialUrl": "https://www.dicoding.com/certificates/72ZDKGY8LPYW",
-      "imageUrl": "/img/certifications/belajar-fundamental-aplikasi-web-dengan-react.webp",
+      "imageUrl": "/img/certifications/belajar-fundamental-aplikasiweb-dengan-react.webp",
       "category": ["React Developer"]
     },
     {
@@ -141,15 +155,6 @@
       "credentialId": "0LZ05KVN3X65",
       "credentialUrl": "https://www.dicoding.com/certificates/0LZ05KVN3X65",
       "imageUrl": "/img/certifications/menjadi-react-web-developer-expert.webp",
-      "category": ["React Developer"]
-    },
-    {
-      "title": "Belajar Membuat Aplikasi Web dengan Next.js",
-      "issuer": "Dicoding Indonesia",
-      "date": "15 February 2026",
-      "credentialId": "E3W3EXX0OZ3D",
-      "credentialUrl": "https://www.dicoding.com/certificates/E3W3EXX0OZ3D",
-      "imageUrl": "/img/certifications/belajar-membuat-aplikasi-web-dengan-nextjs.webp",
       "category": ["React Developer"]
     }
   ]

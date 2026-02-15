@@ -1,11 +1,16 @@
 import { useEffect, useState } from 'react';
 import ToggleTheme from './components/ToggleTheme';
 import { ThemeProvider } from './context/theme';
-import getTheme from './utils/theme';
+import initTheme from './utils/theme';
 import Navigation from './components/Navigation';
+import Hero from './components/Hero';
+import About from './components/About';
+import Projects from './components/Projects';
+import Certifications from './components/Certifications';
+import Contact from './components/Contact';
 
 function App() {
-  const [theme, setTheme] = useState(() => getTheme());
+  const [theme, setTheme] = useState(() => initTheme());
 
   const toggleTheme = () => {
     setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
@@ -49,7 +54,13 @@ function App() {
           </div>
         </nav>
       </header>
-      <main className="container px-2 py-4 "></main>
+      <main>
+        <Hero />
+        <About />
+        <Projects />
+        <Certifications />
+        <Contact />
+      </main>
     </ThemeProvider>
   );
 }
