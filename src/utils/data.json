@@ -1,0 +1,156 @@
+{
+  "projects": [
+    {
+      "title": "Therads",
+      "description": "A discussion forum web application that allows users to create threads, comment, and interact with other users. Built with React and Redux for state management.",
+      "imageUrl": "/img/projects/therads.webp",
+      "projectUrl": "https://arl-therads.vercel.app",
+      "technologies": ["React","Bootstrap", "SASS", "React Icons", "Redux", "Vite", "Vitest", "Cypress"]
+    },
+    {
+      "title": "Notes App-v2",
+      "description": "A Notes App web application with multiple page that allows users to create, archive, delete and search notes. Built with React and Axios for data fetching.",
+      "imageUrl": "/img/projects/notes-v2.webp",
+      "projectUrl": "https://arl-notes-v2.vercel.app",
+      "technologies": ["React", "React Icons", "React Router", "Bootstrap", "SASS", "Axios",  "Vite"]
+    },
+    {
+      "title": "Story App-v2",
+      "description": "A Story App web application that allows users to share stories and location with others. Built with MVP architecture and implemented PWA (Progressive Web App) features.",
+      "imageUrl": "/img/projects/storyapp-v2.webp",
+      "projectUrl": "https://arl-storyapp-v2.vercel.app",
+      "technologies": ["HTML5", "CSS3", "JavaScript", "Bootstrap", "SASS", "Leaflet", "Webpack"]
+    },
+    {
+      "title": "Story App-v1",
+      "description": "A Story App web application that allows users to share stories with others. Built with Lit and bootstrap.",
+      "imageUrl": "/img/projects/story-v1.webp",
+      "projectUrl": "https://arl-story-v1.vercel.app",
+      "technologies": ["HTML5", "CSS3", "JavaScript", "Lit", "Bootstrap", "SASS", "Webpack"]
+    },
+    {
+      "title": "Notes App-v1",
+      "description": "A Notes App web application that allows users to create, archive, delete and search notes. Built with vanilla JavaScript and data saved in localStorage.",
+      "imageUrl": "/img/projects/notes-v1.webp",
+      "projectUrl": "https://arl-notes-v1.vercel.app",
+      "technologies": ["HTML5", "CSS3", "JavaScript", "Webpack"]
+    },
+    {
+      "title": "Bookshelf App",
+      "description": "A Bookshelf App web application that allows users to add, remove, edit, and search books. Built with vanilla JavaScript and data saved in localStorage.",
+      "imageUrl": "/img/projects/bookshelf.webp",
+      "projectUrl": "https://arl-bookshelf.vercel.app",
+      "technologies": ["HTML5", "CSS3", "JavaScript"]
+    },
+    {
+      "title": "Sena",
+      "description": "A comprehensive sentiment analysis platform for Google Play Store app reviews, leveraging Naive Bayes, SVM, and SMOTE methods.",
+      "imageUrl": "/img/projects/sena.webp",
+      "projectUrl": "https://www.youtube.com/watch?v=tufgYl6mPds",
+      "technologies": ["Flask", "Python", "Bootstrap", "Font Awesome", "MySQL", "scikit-learn", "DataTables", "Chart.js"]
+    },
+    {
+      "title": "P.O.S Djuragan",
+      "description": "A Point of Sale (P.O.S) web application designed for small businesses to manage sales, inventory, and customer data efficiently.",
+      "imageUrl": "/img/projects/pos-djuragan.webp",
+      "projectUrl": "https://drive.google.com/drive/folders/1GyKSK-BlxZpgOrrryk262zwJ3Cb32Fi7?usp=sharing",
+      "technologies": ["Laravel", "PHP", "HTML5", "CSS3", "JavaScript", "Bootstrap", "jQuery"]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Belajar Dasar Pemrograman Web",
+      "issuer": "Dicoding Indonesia",
+      "date": "1 August 2025",
+      "credentialId": "1OP8JD9DLPQK",
+      "credentialUrl": "https://www.dicoding.com/certificates/1OP8JD9DLPQK",
+      "imageUrl": "/img/certifications/belajar-dasar-pemrograman-web.webp",
+      "category": ["Front-End Web Developer", "React Developer"]
+    },
+    {
+      "title": "Belajar Dasar Pemrograman JavaScript",
+      "issuer": "Dicoding Indonesia",
+      "date": "8 August 2025",
+      "credentialId": "GRX5JKKJYX0M",
+      "credentialUrl": "https://www.dicoding.com/certificates/GRX5JKKJYX0M",
+      "imageUrl": "/img/certifications/belajar-dasar-pemrograman-javascript.webp",
+      "category": ["Front-End Web Developer", "React Developer"]
+    },
+    {
+      "title": "Belajar Membuat Front-End Web untuk Pemula",
+      "issuer": "Dicoding Indonesia",
+      "date": "16 August 2025",
+      "credentialId": "L4PQ232VOZO1",
+      "credentialUrl": "https://www.dicoding.com/certificates/L4PQ232VOZO1",
+      "imageUrl": "/img/certifications/belajar-membuat-frontend-web-untuk-pemula.webp",
+      "category": ["Front-End Web Developer", "React Developer"]
+    },
+    {
+      "title": "Belajar Membuat Aplikasi Web dengan React",
+      "issuer": "Dicoding Indonesia",
+      "date": "28 August 2025",
+      "credentialId": "NVP7JNBKVRX0",
+      "credentialUrl": "https://www.dicoding.com/certificates/NVP7JNBKVRX0",
+      "imageUrl": "/img/certifications/belajar-membuat-aplikasi-web-dengan-react.webp",
+      "category": ["React Developer"]
+
+    },
+    {
+      "title": "Belajar Fundamental Front-End Web Development",
+      "issuer": "Dicoding Indonesia",
+      "date": "14 September 2025",
+      "credentialId": "53XEKN4NKXRN",
+      "credentialUrl": "https://www.dicoding.com/certificates/53XEKN4NKXRN",
+      "imageUrl": "/img/certifications/belajar-fundamental-frontend-web-development.webp",
+      "category": ["Front-End Web Developer"]
+
+    },
+    {
+      "title": "Belajar Toolset untuk Pengembangan Front-End Web",
+      "issuer": "Dicoding Indonesia",
+      "date": "24 October 2025",
+      "credentialId": "L4PQ226J2ZO1",
+      "credentialUrl": "https://www.dicoding.com/certificates/L4PQ226J2ZO1",
+      "imageUrl": "/img/certifications/belajar-toolset-untuk-pengembangan-frontend-web.webp",
+      "category": ["Front-End Web Developer"]
+
+    },
+    {
+      "title": "Belajar Pengembangan Web Intermediate",
+      "issuer": "Dicoding Indonesia",
+      "date": "3 November 2025",
+      "credentialId": "NVP7JN6KVXR0",
+      "credentialUrl": "https://www.dicoding.com/certificates/NVP7JN6KVXR0",
+      "imageUrl": "/img/certifications/belajar-pengembangan-web-intermediate.webp",
+      "category": ["Front-End Web Developer"]
+
+    },
+    {
+      "title": "Belajar Fundamental Aplikasi Web dengan React",
+      "issuer": "Dicoding Indonesia",
+      "date": "24 January 2026",
+      "credentialId": "72ZDKGY8LPYW",
+      "credentialUrl": "https://www.dicoding.com/certificates/72ZDKGY8LPYW",
+      "imageUrl": "/img/certifications/belajar-fundamental-aplikasi-web-dengan-react.webp",
+      "category": ["React Developer"]
+    },
+    {
+      "title": "Menjadi React Web Developer Expert",
+      "issuer": "Dicoding Indonesia",
+      "date": "1 February 2026",
+      "credentialId": "0LZ05KVN3X65",
+      "credentialUrl": "https://www.dicoding.com/certificates/0LZ05KVN3X65",
+      "imageUrl": "/img/certifications/menjadi-react-web-developer-expert.webp",
+      "category": ["React Developer"]
+    },
+    {
+      "title": "Belajar Membuat Aplikasi Web dengan Next.js",
+      "issuer": "Dicoding Indonesia",
+      "date": "15 February 2026",
+      "credentialId": "E3W3EXX0OZ3D",
+      "credentialUrl": "https://www.dicoding.com/certificates/E3W3EXX0OZ3D",
+      "imageUrl": "/img/certifications/belajar-membuat-aplikasi-web-dengan-nextjs.webp",
+      "category": ["React Developer"]
+    }
+  ]
+}
