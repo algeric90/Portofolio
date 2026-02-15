@@ -7,7 +7,7 @@ function Hero() {
       <h1 className="fw-bolder">Alfa Rifa Luky Achmad Rayendra</h1>
       <p>Frontend Web Developer</p>
       <div className="d-flex gap-3 justify-content-center">
-        <a href="./files/CV_Alfa Rifa_Frontend.pdf" download className="btn">
+        <a href="./cv/Alfa Rifa Luky Achmad Rayendra - Frontend Developer.pdf" download className="btn">
           Download CV
         </a>
         <a href="https://github.com/alfarifalar" className="btn">

@@ -4,7 +4,7 @@ import { RiJavascriptFill } from 'react-icons/ri';
 
 function About() {
   return (
-    <section className="container p-0 my-5" id="about">
+    <section className="container my-5" id="about">
       <div className="card p-5">
         <h2 className="text-center fw-bold">About Me</h2>
         <div className="d-lg-flex justify-content-around align-items-center gap-5">

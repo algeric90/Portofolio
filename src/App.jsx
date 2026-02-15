@@ -61,6 +61,12 @@ function App() {
         <Certifications />
         <Contact />
       </main>
+      <footer className="text-center py-4">
+        <hr />
+        <small className="text-muted">
+          Copyright &copy; 2026 Alfa Rifa Luky. All rights reserved.
+        </small>
+      </footer>
     </ThemeProvider>
   );
 }
