@@ -1,11 +1,11 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: "dist",
+    outDir: 'dist',
   },
   server: {
     port: 5678,
@@ -14,12 +14,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        silenceDeprecations: [
-          "import",
-          "mixed-decls",
-          "color-functions",
-          "global-builtin",
-        ],
+        silenceDeprecations: ['import', 'mixed-decls', 'color-functions', 'global-builtin'],
       },
     },
   },

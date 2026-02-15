@@ -1,0 +1,95 @@
+:root {
+  --bg-dark: oklch(0.92 0.04 183);
+  --bg: oklch(0.96 0.04 183);
+  --bg-light: oklch(1 0.04 183);
+  --text: oklch(0.15 0.08 183);
+  --text-semi-muted: oklch(0.27 0.08 183);
+  --text-muted: oklch(0.4 0.08 183);
+  &[data-bs-theme='dark'] {
+    --bg-dark: oklch(0.1 0.04 183);
+    --bg: oklch(0.15 0.04 183);
+    --bg-light: oklch(0.2 0.04 183);
+    --text: oklch(0.96 0.08 183);
+    --text-semi-muted: oklch(0.86 0.08 183);
+    --text-muted: oklch(0.76 0.08 183);
+  }
+
+  // shadow
+  --shadow-s:
+    inset 0 1px 2px #ffffff30, /*Top highlight*/ 0 1px 2px #00000030,
+    /*dark shadow*/ 0 2px 4px #00000015; /*soft shadow*/
+
+  --shadow-m:
+    inset 0 2px 4px #ffffff50, /*Top highlight*/ 0 2px 4px #00000030,
+    /*dark shadow*/ 0 4px 8px #00000015; /*soft shadow*/
+
+  --shadow-l:
+    inset 0 4px 8px #ffffff70, /*Top highlight*/ 0 4px 6px #00000030,
+    /*dark shadow*/ 0 6px 10px #00000015; /*soft shadow*/
+  * {
+    transition: background 0.3s ease-in;
+  }
+  body {
+    box-sizing: border-box;
+    background: var(--bg-dark);
+    color: var(--text);
+    header {
+      &.fixed-top {
+        top: 8px;
+      }
+      nav {
+        background: var(--bg);
+        backdrop-filter: blur(4px);
+        box-shadow: var(--shadow-s);
+        .nav-link {
+          color: var(--text-muted);
+        }
+      }
+    }
+    main {
+      margin-top: 74px;
+      .search-bar {
+        border-radius: var(--bs-border-radius-pill);
+        padding-left: 3rem;
+        background: var(--bg-light);
+        box-shadow: var(--shadow-s);
+      }
+      .badge {
+        background: var(--bg);
+        box-shadow: var(--shadow-s);
+      }
+      .card {
+        height: 100%;
+        background: var(--bg);
+        box-shadow: var(--shadow-m);
+        &-title {
+          color: var(--text);
+        }
+        &-date {
+          color: var(--text-muted);
+        }
+        &-text {
+          color: var(--text-semi-muted);
+          &.clamp {
+            display: -webkit-box;
+            text-overflow: ellipsis;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            -webkit-line-clamp: 4;
+          }
+        }
+        &-header {
+          box-shadow: var(--shadow-m);
+          border-top-left-radius: 1rem;
+          border-top-right-radius: 1rem;
+        }
+        &-body {
+          color: var(--text-semi-muted);
+          background: var(--bg);
+          padding: 0;
+          border: none;
+        }
+      }
+    }
+  }
+}
