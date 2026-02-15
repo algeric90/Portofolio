@@ -1,10 +1,33 @@
-@font-face {
-  font-family: "Quicksand";
-  src: url("/src/public/fonts/Quicksand-VariableFont_wght.ttf") format("truetype-variations");
-  font-weight: 300 700; 
-  font-display: swap;
-}
-// custom variables padding-block pada _navbar
-$navbar-padding-y: 0.75rem;
+// font
+$font-family-sans-serif: 'Quicksand', sans-serif;
 
+// custom variables navbar
+$navbar-padding-y: 0.75rem;
 $navbar-toggler-font-size: $font-size-base;
+
+// custom variables nav
+$nav-link-color: var(--text-muted);
+$nav-link-hover-color: var(--text);
+$nav-tabs-link-active-bg: var(--bg);
+$nav-tabs-link-active-color: var(--text);
+
+// custom variables card
+$card-bg: var(--bg);
+$card-cap-bg: var(--bg);
+$card-border-radius: 1rem;
+$card-border-width: 0px;
+$card-box-shadow: var(--shadow-m);
+
+// custom variables input
+$input-bg: var(--bg-light);
+$input-color: var(--text-muted);
+$input-border-radius: 0.5rem;
+
+// custom variables button
+$btn-border-radius: 0.5rem;
+
+// badge
+$badge-color: var(--text);
+
+// list-group
+$list-group-bg: var(--bg);

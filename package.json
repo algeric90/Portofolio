@@ -1,52 +1,37 @@
 {
   "name": "portofolio",
-  "version": "1.0.0",
-  "description": "portofolio",
-  "main": "webpack.common.js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "build": "webpack --config webpack.prod.js",
-    "start": "webpack serve --config webpack.dev.js",
-    "serve": "http-server dist"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/algeric90/Portofolio.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/algeric90/Portofolio/issues"
-  },
-  "homepage": "https://github.com/algeric90/Portofolio#readme",
-  "devDependencies": {
-    "@babel/core": "^7.28.5",
-    "@babel/preset-env": "^7.28.5",
-    "@fortawesome/fontawesome-free": "^7.1.0",
-    "autoprefixer": "^10.4.21",
-    "babel-loader": "^10.0.0",
-    "clean-webpack-plugin": "^4.0.0",
-    "copy-webpack-plugin": "^13.0.1",
-    "css-loader": "^7.1.2",
-    "html-webpack-plugin": "^5.6.4",
-    "http-server": "^14.1.1",
-    "mini-css-extract-plugin": "^2.9.4",
-    "postcss-loader": "^8.2.0",
-    "sass": "^1.93.3",
-    "sass-loader": "^16.0.6",
-    "style-loader": "^4.0.0",
-    "webpack": "^5.102.1",
-    "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.2",
-    "webpack-merge": "^6.0.1",
-    "workbox-webpack-plugin": "^7.3.0"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.8",
-    "motion": "^12.23.24",
-    "workbox-cacheable-response": "^7.3.0",
-    "workbox-precaching": "^7.3.0",
-    "workbox-routing": "^7.3.0",
-    "workbox-strategies": "^7.3.0"
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-icons": "^5.5.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "prettier": "3.7.4",
+    "sass": "^1.97.2",
+    "vite": "^7.3.1"
   }
 }
