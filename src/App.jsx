@@ -1,35 +1,57 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect, useState } from 'react';
+import ToggleTheme from './components/ToggleTheme';
+import { ThemeProvider } from './context/theme';
+import getTheme from './utils/theme';
+import Navigation from './components/Navigation';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [theme, setTheme] = useState(() => getTheme());
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
+  };
+
+  useEffect(() => {
+    localStorage.setItem('theme', theme);
+    document.documentElement.setAttribute('data-bs-theme', theme);
+  }, [theme]);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <ThemeProvider value={{ theme, toggleTheme }}>
+      <header className="container fixed-top">
+        <nav className="navbar navbar-expand-lg bg-opacity-25 px-2 rounded-4" id="navigation">
+          <div className="container gap-2">
+            <button
+              className="navbar-toggler me-auto px-1"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarToggler"
+              aria-controls="navbarToggler"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+
+            <a className="navbar-brand p-0 order-lg-first me-auto" href="#hero">
+              <img
+                className="d-inline-block align-text-top"
+                src="/img/logo.svg"
+                alt="Logo Alfa Rifa Luky"
+                height="24"
+              />
+              <span className="d-none d-lg-inline ms-2 fw-bold">ARL</span>
+            </a>
+            <ToggleTheme />
+            <div className="collapse navbar-collapse" id="navbarToggler">
+              <Navigation />
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main className="container px-2 py-4 "></main>
+    </ThemeProvider>
+  );
 }
 
-export default App
+export default App;
